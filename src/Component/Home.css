@@ -1,0 +1,129 @@
+/* Style for the Home container */
+.home-container {
+    background-image: url('C:\Users\ABHISHRUT\Pictures\Saved Pictures\Motivation.jpg'); /* Use relative path */
+    background-position: right;
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 251, 251);
+    background-color: rgb(45, 12, 50);
+    padding: 20px;
+}
+
+/* Style for the date display */
+.date {
+    color: rgb(133, 133, 133);
+    position: absolute;
+    top: 0px;
+    left: 180px; /* Adjusted to fit layout */
+}
+
+/* Style for the content section */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Style for the input section */
+.Top {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    width: 100%; /* Ensure full width */
+    margin-bottom: 20px; /* Add spacing below input section */
+}
+
+/* Style for the input and button wrapper */
+.input-wrapper {
+    display: flex;
+    flex-direction: row; /* Align input and button horizontally */
+    align-items: center; /* Center align items vertically */
+    width: 100%; /* Ensure full width for wrapper */
+    max-width: 600px; /* Limit the maximum width of the wrapper */
+}
+
+/* Style for the task input box */
+.input-box-todo {
+    height: 55px;
+    flex: 1; /* Take available space */
+    max-width: 600px; /* Limit the maximum width */
+    padding: 15px 20px; /* Increase padding for a larger input field */
+    font-size: 1.5rem; /* Increase font size for better readability */
+    border: 2px solid #91be52; /* Add a border for more prominence */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+    background-color: #f9f9f9; /* Light background color for the input */
+    color: #333; /* Darker text color for better contrast */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Style for the Add button */
+.add-btn {
+    padding: 15px 20px; /* Increase padding for the button */
+    background-color: #5cb85c; /* Green background color */
+    color: white;
+    border: none; /* Remove default border */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
+    cursor: pointer;
+    font-size: 1.5rem; /* Increase font size for better readability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px; /* Add spacing to the left of the button */
+}
+
+.add-btn:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Style for the tasks list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Ensure the list takes up the full width */
+    max-width: 600px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the list */
+}
+
+.task {
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+/* Style for the delete button */
+.task button {
+    background-color: #d9534f; /* Red background for the delete button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+.important-btn {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    color: #f1c40f; /* Gold color for the star */
+    cursor: pointer;
+    font-size: 1.5rem; /* Increase font size for better visibility */
+    margin-right: 10px; /* Add space between the star and the task text */
+}
+
+.important-btn:hover {
+    color: #f39c12; /* Slightly darker gold on hover */
+}
